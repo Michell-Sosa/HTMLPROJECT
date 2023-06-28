@@ -1,24 +1,30 @@
-.pa-t-10{
-    padding: 10px;
-}
 
-.per-wrapper{
-    height: 100%;
-    position: absolute;
+.bg-img{
+    background-image: url("../assets/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
 }
-
 .card{
-    width: 25%;
-    height: 67%;
-    margin-left: 40%;
-    margin-top: 7%;
-    background-color: rgb(212, 212, 212);
-    position: absolute;
-    border-color: rgb(252, 252, 252);
+    width: 100%;
+    height: 100%;
+    padding: 100px 0 145px 0 ;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px;
+    
+    scroll-behavior: hidden;
+   
 }
 
 .card-body{
-    margin-top: 2%;
-    margin-left: 13%;
+    border-radius: 5%;  
+    align-items: center;
+    background-color: rgb(212, 212, 212);
+    border-color: rgb(212, 212, 212);
 }
 
+
+.from{
+    border-color: azure;
+}
