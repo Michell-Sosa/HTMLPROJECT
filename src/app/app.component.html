@@ -10,15 +10,15 @@
                             </div>
                         </div>
                         <form>
-                            <div class="from-label col-sm-6 align-self-center">
-                                <label for="exampleInputEmail1" class="form-label">Email o usuario</label>
+                            <div class="from-label align-center">
+                                <label for="exampleInputEmail1" class= "from-label ">Email o usuario</label>
                                 <input (keyup)="validUser()" [(ngModel)]="userData.user" type="email">
                                 <label class="tx-red" *ngIf="user==1">Debe tener mínimo 4 caracteres</label>
                                 <label class="tx-red" *ngIf="user==2">No puede contener espacios en blanco </label>
                             </div>
-                            <div class="from-label col-sm-8 align-self-center">
+                            <div class="from-label align-self-center">
                                 <label for="exampleInputPassword1" class="form-label">Contraseña</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <input (keyup)="validPassword()" [(ngModel)]="userData.password" type="password">
                                 <label class="tx-red" *ngIf="passwrd==1">Escribe mínimo 5 caracteres</label>
                                 <label class="tx-red" *ngIf="passwrd==2">Debe especificar contraseña </label>
                             </div>
